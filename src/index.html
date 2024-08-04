@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing Page Parcel</title>
+    <title>Landing Page Parcel</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,12 +14,66 @@
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
-            <p  class="hero__text">O maior evento de tecnologia do Brasil começa em 10d 10h 10m 10s</p>
+            <p  class="hero__text" id="hero__text">O maior evento de tecnologia do Brasil começa em <span id="contador"></span></p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2022 às 19hrs
+                    </li>
+                    <li>
+                        <input type="button" value="Garantir minha vaga" class="button">
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    <section class="info">
-
+    <section class="event e1">
+        <div class="container event_container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.</p>
+            </div>
+            <img class="event__image img_front" src="./images/frontend.png" alt="Front-end">
+        </div>
     </section>
+        <section class="event e2">
+            <div class="container event_container" data-aos="fade-left">
+                <img class="event__image img_back" src="./images/frontend.png" alt="Front-end">
+                <div class="event__details">
+                    <h2 class="event__details__title">UX-UI</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.</p>
+                </div>
+            </div>
+        </section>
+        <section class="event e3">
+            <div class="container event_container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Data Science</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.</p>
+                </div>
+                <img class="event__image img_front" src="./images/frontend.png" alt="Front-end">
+            </div>
+        </section>
+        <section class="event e4">
+            <div class="container event_container div4" data-aos="fade-left">
+                <img class="event__image img_back" src="./images/frontend.png" alt="Front-end">
+                <div class="event__details">
+                    <h2 class="event__details__title">Back-end</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque repellendus veniam vel deserunt in labore perferendis nesciunt? Maiores sapiente reiciendis eveniet amet cupiditate temporibus distinctio quas voluptates perferendis.</p>
+                </div>
+            </div>
+        </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
